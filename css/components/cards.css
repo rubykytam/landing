@@ -1,5 +1,5 @@
 .card img {
-  width: 500px;
+  width: 80%;
 }
 
 .card p {
@@ -7,7 +7,7 @@
 }
 
 .card {
-  width: 100%;
+  width: 400px;
   border-radius: 3px;
   box-shadow: 0 0 5px rgb(230,230,230);
   text-align: center;
