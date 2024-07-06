@@ -1,6 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
-
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 /* Fontawesome */
 @import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
 @import url(components/banner.css);
@@ -15,8 +15,40 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: Poppins;
+  font-family: 'Paytone One', sans-serif;
 }
+
+@keyframes colorChange {
+  0% { background-color: #ff0000; }
+  25% { background-color: #00ff00; }
+  50% { background-color: #0000ff; }
+  75% { background-color: #ffff00; }
+  100% { background-color: #ff0000; }
+}
+
+h2{
+  display: inline-flex;
+  align-items: flex-end;
+  animation: colorChange 10s infinite;
+  font-size: 36pt;
+  color:white;
+  margin-top: 15px;
+  margin-bottom:15px;
+  line-height: 1;
+  padding-top: 20px;
+  padding-bottom: 0px;
+
+}
+
+h2.left{
+  padding-left: calc((100vw - var(--container-width)) / 2 - 20px);
+}
+
+h2.right {
+  align-self: flex-end;
+  padding-right: calc((100vw - var(--container-width)) / 2 - 20px);
+}
+
 
 a {
   text-decoration: none;
