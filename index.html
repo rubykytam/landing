@@ -113,62 +113,60 @@
 
     <h2 class="right">GRAPHIC DESIGN</h2>
     <div class="container">
-      <div class="cards">
-      <div class="card">
-        <div class="slideshow-container" id="slideshowSNS">
-          <div class="mySlides fade">
-            <img src="images/2019_HKBU_CEC_XmasCard.jpg" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/2020_HKBU_CEC_SocialMedia.png" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/HKAGE-SNS1.jpg" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/HKAGE-SNS2.jpg" alt="">
-          </div>
+      <div class="sms-gallery">
+        <div class="sms content ec">
+          <h3>Product Promotion</h3>
+          <p>ECサイト向けのイメージデザイン</p>
         </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1, 'slideshowSNS')"></span>
-          <span class="dot" onclick="currentSlide(2, 'slideshowSNS')"></span>
-          <span class="dot" onclick="currentSlide(3, 'slideshowSNS')"></span>
-          <span class="dot" onclick="currentSlide(4, 'slideshowSNS')"></span>
+        <div class="sms">
+          <img src="images/rakuten.jpg" alt="">
         </div>
-      </div>
-      <div class="card">
-        <h4>商品販売画像作成</h4>
-        <div class="slideshow-container" id="slideshowRakuten">
-          <div class="mySlides fade">
-            <img src="images/rakuten.jpg" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/rakuten2.jpg" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/rakuten3.jpg" alt="">
-          </div>
-          <div class="mySlides fade">
-            <img src="images/rakuten4.jpg" alt="">
-          </div>
+        <div class="sms">
+          <img src="images/rakuten2.jpg" alt="">
         </div>
-        <br>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1, 'slideshowRakuten')"></span>
-          <span class="dot" onclick="currentSlide(2, 'slideshowRakuten')"></span>
-          <span class="dot" onclick="currentSlide(3, 'slideshowRakuten')"></span>
-          <span class="dot" onclick="currentSlide(4, 'slideshowRakuten')"></span>
+        <div class="sms">
+          <img src="images/rakuten3.jpg" alt="">
         </div>
-      </div>
+        <div class="sms">
+          <img src="images/rakuten4.jpg" alt="">
+        </div>
+        <div class="sms content fb">
+          <h3>Course Promotion</h3>
+          <p>SMS向けのイメージデザイン</p>
+        </div>
+        <div class="sms">
+          <img src="images/HKAGE-SNS1.jpg" alt="">
+        </div>
+
+        <div class="sms">
+          <img src="images/2022_HKAGE_SMS_ART2.jpg" alt="">
+        </div>
+        <div class="sms">
+          <img src="images/2022_HKAGE_SMS_ART.png" alt="">
+        </div>
+        <div class="sms">
+          <img src="images/2019_HKBU_CEC_XmasCard.jpg" alt="">
+        </div>
+        <div class="sms">
+          <img src="images/2020_HKBU_CEC_SocialMedia.png" alt="">
+        </div>
+        <div class="sms">
+          <img src="images/2020_HKBU_CEC_SocialMedia.jpg" alt="">
+        </div>
 </div>
 </div>
 
-<h2>LEAFLET</h2>
+<h2 class="left">PRINTED MEDIA</h2>
 <div class="container">
-  <div class="img-cards">
-      <div class="img-card">
+  <div class="leaflet-gallery">
+      <div class="leaflet">
         <img src="images/2021_HKAGE_leaflet_byPowerPoint.jpg" alt="">
+      </div>
+      <div class="leaflet">
+        <img src="images/ 2021_HKAGE_flyerTemplate_byPowerPoint.jpg" alt="">
+      </div>
+      <div class="leaflet">
+        <img src="images/2020_HKBU_CEC_Poster.jpg" alt="">
       </div>
     </div>
   </div>
@@ -189,8 +187,6 @@
     });
 
     let slideIndex = {
-      'slideshowSNS': 1,
-      'slideshowRakuten': 1,
       'slideshowVedio': 1
     };
 
@@ -225,8 +221,6 @@
     }
 
     // Initialize slideshows
-    showSlides(1, 'slideshowSNS');
-    showSlides(1, 'slideshowRakuten');
     showSlides(1, 'slideshowVedio');
   </script>
 </body>
