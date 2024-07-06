@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
 .banner {
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
   padding: 100px 0;
   width: 100vw;
   height: 100vh;
@@ -10,11 +12,13 @@
 }
 
 .banner h1 {
-  color: white;
+  color: black;
 }
 
 .banner p {
-  color: white;
+  color: black;
   opacity: .7;
   font-size: 20px;
+  font-family: Yomogi;
+  padding-left: 20px;
 }
