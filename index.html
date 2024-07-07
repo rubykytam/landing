@@ -13,7 +13,7 @@
   <div class="banner">
     <!-- <div class="banner" style="background-image: url(images/bg2.jpg);"> -->
     <div class="container">
-      <h1>東京で正社員または契約社員を探しています。</h1>
+      <h1 id="highlightText">東京で正社員または契約社員を探しています。</h1>
       <p>WordPressとAdobeでの経験が多くあります。</p>
       <p>Le Wagon TokyoでRuby (Silver), Rails, Javascript, HTML, CSSを学びました。</p>
       <p>日本語（JLPT N1）、英語、中国語、広東語が話せます。</p>
@@ -192,6 +192,10 @@
         behavior: 'smooth'
       });
     });
+    document.addEventListener('DOMContentLoaded', function() {
+    const text = document.getElementById('highlightText');
+    text.classList.add('highlight');
+});
   </script>
 </body>
 </html>
