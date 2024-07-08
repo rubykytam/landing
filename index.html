@@ -204,8 +204,13 @@
       });
     });
     document.addEventListener('DOMContentLoaded', function() {
+  const img = new Image();
+  img.src = 'images/bgpcbw.jpg';
+  img.onload = function() {
+    document.body.style.visibility = 'visible';
     const text = document.getElementById('highlightText');
     text.classList.add('highlight');
+  };
 });
   </script>
 </body>
