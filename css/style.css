@@ -15,8 +15,9 @@
 body {
   margin: 0;
   font-family: Open Sans;
-  /* background-image: url('../images/bg2.jpg'); */
-  /* background-size: cover;
+  background-color: #e3e1e0;
+  /* background-image: url('../images/bgMountain.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat; */
 }
@@ -27,6 +28,7 @@ h1{
 #highlightText {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 
 #highlightText::before {
@@ -38,8 +40,8 @@ h1{
   height: 100%;
   background-color: yellow;
   z-index: -1;
-  transition: width 2s ease-in-out;
-  animation: highlighting 2s forwards;
+  transition: width 3s ease-in-out;
+  animation: highlighting 3s forwards;
 }
 
 @keyframes highlighting {
@@ -57,19 +59,20 @@ h3{
 }
 @keyframes colorChange {
   0% { background-color: #ff0000; }
-  25% { background-color: #00ff00; }
-  50% { background-color: #0000ff; }
-  75% { background-color: #ffff00; }
+  20%{ background-color: yellow; }
+  40% { background-color: #00ff00; }
+  60% { background-color: #0000ff; }
+  80% { background-color: purple; }
   100% { background-color: #ff0000; }
 }
 
 h2{
   display: inline-flex;
   align-items: flex-end;
-  animation: colorChange 10s infinite;
+  /* animation: colorChange 10s infinite; */
   font-size: 36pt;
   color:white;
-  margin-top: 30px;
+  margin-top: 80px;
   margin-bottom:15px;
   line-height: 1;
   padding-top: 30px;

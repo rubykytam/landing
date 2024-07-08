@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 .banner {
-  /* background-size: cover;
-  background-position: center; */
+  background-image:url("../../images/bgpcbw2.jpg") ;
+  background-size: cover;
+  background-position: center;
   padding: 100px 0;
   width: 100vw;
   height: 100vh;
@@ -19,6 +20,47 @@
   color: black;
   opacity: .7;
   font-size: 11pt;
-  font-family: Yomogi;
+  /* font-family: Yomogi; */
   padding-left: 20px;
+}
+
+.banner-content{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.banner-img img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid;
+  border-color: yellow;
+}
+.button-container{
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .banner-content{
+    grid-template-columns:repeat(1, minmax(80%, 1fr));
+  }
+  .banner-img {
+    order: -1;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  .banner-img img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover; /
+  }
 }

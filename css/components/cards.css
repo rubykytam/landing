@@ -12,11 +12,13 @@
   gap: 12px;
 }
 
+
+
 .webapp{
   background-color: white;
-  box-shadow: 0 0 5px rgb(230,230,230);
+  /* box-shadow: 0 0 5px rgb(200, 200, 200); */
   border-radius: 3px;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(200, 200, 200);
   padding: 12px;
 }
 
@@ -46,9 +48,9 @@
 
 .wordpress{
   background-color: white;
-  box-shadow: 0 0 5px rgb(230,230,230);
+  /* box-shadow: 0 0 5px rgb(200, 200, 200); */
   border-radius: 3px;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(200, 200, 200);
   padding: 12px;
 }
 
@@ -63,9 +65,9 @@
 }
 .sms {
   background-color: white;
-  box-shadow: 0 0 5px rgb(230,230,230);
+  /* box-shadow: 0 0 5px rgb(200, 200, 200); */
   padding: 0;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .sms.content{
@@ -90,15 +92,29 @@ color:white;
 }
 .leaflet {
   background-color: white;
-  box-shadow: 0 0 5px rgb(230,230,230);
+  /* box-shadow: 0 0 5px rgb(200, 200, 200); */
   margin-bottom:10px;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(200, 200, 200);
 }
 
 .leaflet img {
   width: 100%;
 }
 
+
+
+.wordpress:hover, .webapp:hover , .leaflet:hover, .sms:hover{
+  animation: borderChange 4s infinite;
+}
+
+@keyframes borderChange {
+  0% { border-color: #ff0000; }
+  20%{ border-color: yellow; }
+  40% { border-color: #00ff00; }
+  60% { border-color: #0000ff; }
+  80% { border-color: purple; }
+  100% {border-color: #ff0000; }
+}
 @media (max-width: 550px) {
   .leaflet-gallery{
     grid-template-columns: repeat(2, minmax(50%, 1fr));
